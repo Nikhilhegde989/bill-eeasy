@@ -113,7 +113,7 @@ All review routes are protected and validate user authorization.
 API documentation is available and auto-generated using Swagger UI.
 
 After starting the server, open your browser and visit:
-[text](http://localhost:3001/api-docs)
+http://localhost:3001/api-docs)
 
 
 ## 🧪 Sample Workflow
