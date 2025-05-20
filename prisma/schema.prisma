@@ -13,6 +13,8 @@ model User {
   email    String   @unique
   password String
   reviews  Review[]
+
+  @@index([email]) 
 }
 
 model Book {
@@ -21,6 +23,9 @@ model Book {
   author   String
   genre    String
   reviews  Review[]
+
+  @@index([title])
+  @@index([genre])
 }
 
 model Review {
@@ -33,4 +38,7 @@ model Review {
   userId  Int
 
   @@unique([userId, bookId]) // One review per user per book
+
+  @@index([bookId]) 
+  @@index([userId])
 }
