@@ -120,6 +120,8 @@ API documentation is available and auto-generated using Swagger UI.
 After starting the server, open your browser and visit:
 http://localhost:3001/api-docs
 
+Postman Collection :
+https://martian-zodiac-826748.postman.co/workspace/REST-API~76deca2a-4212-4ac0-86f2-a2399ded4f8d/collection/26521242-63c50647-7cb1-4da3-bbf4-02990d7c9f28?action=share&creator=26521242&active-environment=26521242-8906117d-58f7-458f-850a-370b90b5d106
 
 ## 📂 Project Structure
 
