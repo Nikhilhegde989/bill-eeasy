@@ -49,3 +49,5 @@ app.use('/reviews', reviewRoutes)
 app.listen(PORT, () => {
   console.log("Bill easy application is listening at port number : ", PORT)
 })
+
+module.exports = app;

@@ -3,3 +3,4 @@ node_modules/
 .prisma/
 *.sqlite
 *.sqlite-journal
+coverage/

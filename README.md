@@ -107,7 +107,10 @@ All review routes are protected and validate user authorization.
   * JWT tokens securely encode user identity.
   * Environment variables are used for secrets.
 * **ORM Choice**: Prisma simplifies data modeling, migration, and querying.
+* **Unit Tests**: Added Unit tests for Authentication Routes(Same has to be implemented for other Routes)
+![](image.png)
 
+Run -> npx jest --coverage
 ---
 📜 Swagger API Documentation
 API documentation is available and auto-generated using Swagger UI.
