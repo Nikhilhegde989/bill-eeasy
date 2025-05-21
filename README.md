@@ -13,6 +13,7 @@ A backend system for managing book reviews. Built with **Node.js**, **Express.js
 * ✅ SQLite database managed via Prisma ORM
 * ✅ Indexed database for performance
 * ✅ RESTful API structure with modular code organization
+* ✅ Added Test cases for Authentication route
 
 ---
 
@@ -27,7 +28,7 @@ A backend system for managing book reviews. Built with **Node.js**, **Express.js
 | Auth        | JWT                |
 | Validation  | Express Middleware |
 | Environment | dotenv             |
-
+| Unit Tests  | JEST               |
 ---
 
 ## 🛠️ Project Setup
@@ -83,8 +84,9 @@ Runs at: `http://localhost:3001`
 
 ### 📌 Books
 
-* `GET /books` – Get all books
+* `GET /books` – Get all books ( can be filtered on the basis of title,author, genre)
 * `POST /books` – Add new book
+* `GET /:bookid` – Get book details by ID
 
 ### 📌 Reviews
 
@@ -119,19 +121,6 @@ After starting the server, open your browser and visit:
 http://localhost:3001/api-docs
 
 
-## 🧪 Sample Workflow
-
-1. Register a new user
-2. Login to get a JWT token
-3. Use the token to:
-
-   * Get book list
-   * Submit a review
-   * Update or delete your review
-
-
----
-
 ## 📂 Project Structure
 
 ```
@@ -140,6 +129,7 @@ http://localhost:3001/api-docs
 ├── controllers/         # Route handler logic
 ├── routes/              # Express route definitions
 ├── middleware/          # JWT and validation middlewares
+├── tests/               # unit tests for auth routes
 ├── .env                 # Environment config
 ├── package.json         # Dependencies and scripts
 ├── README.md            # Project documentation
@@ -160,7 +150,6 @@ Browse, and inspect database content easily.
 
 * Role-based access (admin features)
 * Review timestamps and sorting
-* Pagination and filtering
 * Unit & integration tests using Jest or Mocha
 * Docker support
 
@@ -170,7 +159,7 @@ Browse, and inspect database content easily.
 
 I’m a passionate software engineer focused on backend development and scalable systems. This project demonstrates my understanding of authentication, database design, API development, and production-level coding practices.
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/nikhilhegde989/) or reach out via email.
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/nikhilhegde989/) or reach out via email(Nikhilhegde989@gmail.com).
 
 ---
 

@@ -23,7 +23,7 @@ const swaggerOptions = {
       title: "Bill Easy API",
       version: "1.0.0",
       description: "Book Review System API Documentation",
-      contact: { name: "Nikhil Hegde", email: "your.email@example.com" }
+      contact: { name: "Nikhil Hegde", email: "nikhilhegde989@gmail.com" }
     },
     servers: [{ url: `http://localhost:${PORT}` }],
     components: {
@@ -38,13 +38,19 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
+
+
 app.get('/', authenticateToken, (req, res) => {
   res.send('Bill Easy API is running!');
 });
 
+
+
 app.use('/auth', authRoutes)
 app.use('/books', bookRoutes)
 app.use('/reviews', reviewRoutes)
+
+
 
 app.listen(PORT, () => {
   console.log("Bill easy application is listening at port number : ", PORT)

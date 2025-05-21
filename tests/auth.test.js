@@ -1,4 +1,3 @@
-// tests/auth.test.js
 jest.mock('@prisma/client', () => {
   const mPrismaClient = {
     user: {
@@ -84,7 +83,7 @@ describe('Auth Routes', () => {
     expect(res.statusCode).toBe(200);
     expect(res.body.token).toBeDefined();
 
-    global.token = res.body.token; // if needed for other tests
+    global.token = res.body.token; 
   });
 
   it('should return 400 if login data is missing', async () => {
